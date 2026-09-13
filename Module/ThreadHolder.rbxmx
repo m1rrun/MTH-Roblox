@@ -2,7 +2,7 @@
 	<Meta name="ExplicitAutoJoints">true</Meta>
 	<External>null</External>
 	<External>nil</External>
-	<Item class="ModuleScript" referent="RBXEBDC876754A74829BE8F074CA8EF5C74">
+	<Item class="ModuleScript" referent="RBX9ED4CB4A198C4A98BED8C5539CFE443C">
 		<Properties>
 			<Content name="LinkedSource"><null></null></Content>
 			<ProtectedString name="Source"><![CDATA[------------------------------------------------------
@@ -152,7 +152,7 @@ ZF9UaHJlYWQDAQ==]]></BinaryString>
 			<int64 name="SourceAssetId">-1</int64>
 			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 		</Properties>
-		<Item class="ModuleScript" referent="RBXB523EF055F014FF783ABB812E8E56E43">
+		<Item class="ModuleScript" referent="RBXB31AA84112FD492087B0D0B89373F958">
 			<Properties>
 				<Content name="LinkedSource"><null></null></Content>
 				<ProtectedString name="Source"><![CDATA[local te = {}
@@ -188,7 +188,7 @@ return te]]></ProtectedString>
 				<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 			</Properties>
 		</Item>
-		<Item class="LocalScript" referent="RBX6D7DB196692E409993087267AD9AE37D">
+		<Item class="LocalScript" referent="RBX8EBDC18CCF254501BE5D09E95344D279">
 			<Properties>
 				<ProtectedString name="Source">-- https://github.com/m1rrun/Maid_Luau/blob/main/README.md</ProtectedString>
 				<bool name="Disabled">true</bool>
@@ -199,6 +199,22 @@ return te]]></ProtectedString>
 				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 				<bool name="DefinesCapabilities">false</bool>
 				<string name="Name">DOCS</string>
+				<int64 name="SourceAssetId">-1</int64>
+				<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
+			</Properties>
+		</Item>
+		<Item class="PackageLink" referent="RBXF9CDB9E6205848FD81386DC11B61FDCB">
+			<Properties>
+				<bool name="AutoUpdate">false</bool>
+				<string name="DefaultName"></string>
+				<int name="ModifiedState">-1</int>
+				<Content name="PackageIdSerialize"><url>rbxassetid://104061698386399</url></Content>
+				<BinaryString name="SerializedDefaultAttributes"></BinaryString>
+				<int64 name="VersionIdSerialize">1</int64>
+				<BinaryString name="AttributesSerialize"></BinaryString>
+				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
+				<bool name="DefinesCapabilities">false</bool>
+				<string name="Name">PackageLink</string>
 				<int64 name="SourceAssetId">-1</int64>
 				<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 			</Properties>
