@@ -26,9 +26,8 @@
 ## Usage
 
 ```Luau
-local th = require(path.to.ThreadHolder)
-
-local Thread = th.new("Holder")
+const ThreadHolder = require(path.to.ThreadHolder)
+const Thread = ThreadHolder.new("Holder")
 
 Thread:AddThread("Test", task.delay(5, function()
 	print("Hi I'm a task!")
@@ -40,7 +39,7 @@ end))
 
 ```Luau
 
-local cache = Thread:GetAutoCache()
+const cache = Thread:GetAutoCache()
 
 cache["Test"] = task.delay(5, function()
 	print("Hi I'm a task!")
@@ -64,7 +63,7 @@ Thread.isAutoClear: boolean
 
 ```Luau
 
-local Thread = ThreadHolder.new(id: string?, disableAutoClear: boolean?): self
+const Thread = ThreadHolder.new(id: string?, disableAutoClear: boolean?): self
   --> Creates a new ThreadHolder class
 
 Thread:AddThread(id: string, thread: thread): self
