@@ -4,8 +4,6 @@
 
 **A lightweight, typed, auto-cleaning thread lifecycle system for Luau**
 
-Manage tasks without turning your codebase into a graveyard of forgotten coroutines
-
 <br/>
 
 ![Roblox](https://img.shields.io/badge/Roblox-000000?style=for-the-badge\&logo=roblox\&logoColor=white)
@@ -14,18 +12,6 @@ Manage tasks without turning your codebase into a graveyard of forgotten corouti
 ![Status](https://img.shields.io/badge/Status-Active-22C55E?style=for-the-badge)
 
 </div>
-
-## ✦ What is MTH?
-
-**MTH-Roblox** is a compact thread management system built for Roblox developers who want more control over tasks.
-
-Instead of scattering:
-
-```Luau
-task.spawn()
-task.defer()
-coroutine.close()
-```
 
 ## ✦ Download
 
@@ -37,17 +23,7 @@ coroutine.close()
     <span style="font-size: 24px; line-height: 1; font-family: sans-serif;">You can download a ready-to-use file from here.</span>
   </div>
 
-  <div style="display: inline-flex; align-items: center; gap: 8px;">
-    <a href="https://github.com/m1rrun/MTH-Roblox/tree/main/RawCode">
-      <img src="Assets/download_ico.svg" width="30" height="30" alt="Link to rep" style="display: block;">
-    </a>
-    <span style="font-size: 24px; line-height: 1; font-family: sans-serif;">Or access the source code</span><br>
-  </div><br>
-</div>
-
-<span style="font-size: 14px; line-height: 1; font-family: sans-serif;">❗ This code is not intended for direct use because it does not contain the necessary attributes.</span>
-
-## ✦ Usage
+## Usage
 
 ```Luau
 local th = require(path.to.ThreadHolder)
