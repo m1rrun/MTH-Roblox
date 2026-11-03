@@ -1,6 +1,6 @@
 <div align="center">
 
-#  MTH-Roblox
+#  Roblox Thread Holder
 
 **A lightweight, typed, auto-cleaning thread lifecycle system for Luau**
 
@@ -69,17 +69,23 @@ const Thread = ThreadHolder.new(id: string?, disableAutoClear: boolean?): self
 Thread:AddThread(id: string, thread: thread): self
   --> Add a thread to list
 
-Thread:CancelThread(id: string): self
-  --> Cancel and clear a thread
+Thread:HaveThread(id: string): boolean
+  --> Return true if thread with assigned name exists
+
+Thread:GetThread(id: string): thread?
+  --> Return thread if exists
+
+Thread:GetAutoCache(reMeta: boolean?): {[string]: thread}
+  --> Returns a cache that allows direct writing and automatic clearing, bypassing standard methods
 
 Thread:RemoveThread(id: string): self
   --> Only remove thread from list, does not close it
 
+Thread:CancelThread(id: string): self
+  --> Cancel and clear a thread
+
 Thread:CancelAllThreads(): self
   --> Close all threads
-
-Thread:GetAutoCache(reMeta: boolean?): {[string]: thread}
-  --> Returns a cache that allows direct writing and automatic clearing, bypassing standard methods
 
 Thread:Destroy(): nil
   --> Destroys the class, including all threads inside

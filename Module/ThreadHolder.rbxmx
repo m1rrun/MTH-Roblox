@@ -2,7 +2,7 @@
 	<Meta name="ExplicitAutoJoints">true</Meta>
 	<External>null</External>
 	<External>nil</External>
-	<Item class="ModuleScript" referent="RBX9ED4CB4A198C4A98BED8C5539CFE443C">
+	<Item class="ModuleScript" referent="RBX09E35A036F9C40579BC35746BA595C9E">
 		<Properties>
 			<Content name="LinkedSource"><null></null></Content>
 			<ProtectedString name="Source"><![CDATA[------------------------------------------------------
@@ -102,6 +102,14 @@ function api.new(id: string?, disableAutoClear: boolean?)
 		return self
 	end
 	
+	function self:HaveThread(id: string)
+		return not not self.rawCache[id]
+	end
+	
+	function self:GetThread(id: string)
+		return self.rawCache[id]
+	end
+	
 	function self:GetAutoCache(reMeta: boolean?)
 		if reMeta then
 			return setmetatable(self.cache, self._ch_mt)
@@ -149,10 +157,11 @@ ZF9UaHJlYWQDAQ==]]></BinaryString>
 			<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 			<bool name="DefinesCapabilities">false</bool>
 			<string name="Name">ThreadHolder</string>
+			<BinaryString name="SerializedOverrides"></BinaryString>
 			<int64 name="SourceAssetId">-1</int64>
-			<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
+			<SharedString name="Tags">vMcLN195e3FfrMKqYkrQUw==</SharedString>
 		</Properties>
-		<Item class="ModuleScript" referent="RBXB31AA84112FD492087B0D0B89373F958">
+		<Item class="ModuleScript" referent="RBX4C4B2B0E70DB4C8FBC975FD97EAC497B">
 			<Properties>
 				<Content name="LinkedSource"><null></null></Content>
 				<ProtectedString name="Source"><![CDATA[local te = {}
@@ -166,6 +175,8 @@ export type handlerPublic = {
 	read isEmpty: boolean,
 	
 	AddThread: (self: handlerPublic, id: string, thread: thread) -> handlerPublic,
+	HaveThread: (self: handlerPublic, id: string) -> boolean,
+	GetThread: (self: handlerPublic, id: string) -> thread,
 	GetAutoCache: (self: handlerPublic, reMeta: boolean?) -> {[string]: thread},
 	RemoveThread: (self: handlerPublic, id: string?) -> handlerPublic,
 	CancelThread: (self: handlerPublic, id: string?) -> handlerPublic,
@@ -184,11 +195,12 @@ return te]]></ProtectedString>
 				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 				<bool name="DefinesCapabilities">false</bool>
 				<string name="Name">Type</string>
+				<BinaryString name="SerializedOverrides"></BinaryString>
 				<int64 name="SourceAssetId">-1</int64>
 				<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 			</Properties>
 		</Item>
-		<Item class="LocalScript" referent="RBX8EBDC18CCF254501BE5D09E95344D279">
+		<Item class="LocalScript" referent="RBX8157A7866D4F4A54ACA53A3412A973E7">
 			<Properties>
 				<ProtectedString name="Source">-- https://github.com/m1rrun/Maid_Luau/blob/main/README.md</ProtectedString>
 				<bool name="Disabled">true</bool>
@@ -199,28 +211,31 @@ return te]]></ProtectedString>
 				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 				<bool name="DefinesCapabilities">false</bool>
 				<string name="Name">DOCS</string>
+				<BinaryString name="SerializedOverrides"></BinaryString>
 				<int64 name="SourceAssetId">-1</int64>
 				<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 			</Properties>
 		</Item>
-		<Item class="PackageLink" referent="RBXF9CDB9E6205848FD81386DC11B61FDCB">
+		<Item class="PackageLink" referent="RBX09E0D6EFC828402DA4029B4F34A6E8D4">
 			<Properties>
 				<bool name="AutoUpdate">false</bool>
 				<string name="DefaultName"></string>
 				<int name="ModifiedState">-1</int>
 				<Content name="PackageIdSerialize"><url>rbxassetid://104061698386399</url></Content>
 				<BinaryString name="SerializedDefaultAttributes"></BinaryString>
-				<int64 name="VersionIdSerialize">1</int64>
+				<int64 name="VersionIdSerialize">2</int64>
 				<BinaryString name="AttributesSerialize"></BinaryString>
 				<SecurityCapabilities name="Capabilities">0</SecurityCapabilities>
 				<bool name="DefinesCapabilities">false</bool>
 				<string name="Name">PackageLink</string>
+				<BinaryString name="SerializedOverrides"></BinaryString>
 				<int64 name="SourceAssetId">-1</int64>
 				<SharedString name="Tags">yuZpQdnvvUBOTYh1jqZ2cA==</SharedString>
 			</Properties>
 		</Item>
 	</Item>
 	<SharedStrings>
+		<SharedString md5="vMcLN195e3FfrMKqYkrQUw==">Y29tYmluZWRGdW5jdGlvbnMtbGli</SharedString>
 		<SharedString md5="yuZpQdnvvUBOTYh1jqZ2cA=="></SharedString>
 	</SharedStrings>
 </roblox>
