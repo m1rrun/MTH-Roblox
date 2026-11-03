@@ -9,9 +9,8 @@
 ---Services/Modules-----------------------------------
 ------------------------------------------------------
 
-local HTTP = game:GetService('HttpService')
-
-local te = require(script:WaitForChild('Type'))
+const HTTP = game:GetService('HttpService')
+const te = require(script:WaitForChild('Type'))
 
 ------------------------------------------------------
 ---Assign---------------------------------------------
