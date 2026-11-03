@@ -25,6 +25,7 @@
 
 ## Usage
 
+
 ```Luau
 const ThreadHolder = require(path.to.ThreadHolder)
 const Thread = ThreadHolder.new("Holder")
